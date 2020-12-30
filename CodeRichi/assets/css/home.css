@@ -1,0 +1,35 @@
+#home-container {
+  display: flex; }
+  #home-container #feed-posts {
+    width: 70%;
+    padding: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  #home-container #user-friends {
+    width: 30%;
+    padding: 10px;
+    border-left: 1px solid lightgrey;
+    height: 100%;
+    background: linear-gradient(72.92deg, #f0b80265 0.9%, #73cae5 97.46%);
+    border-radius: 15px; }
+  #home-container #new-post-form {
+    margin: 0px; }
+    #home-container #new-post-form textarea {
+      height: 20vh;
+      width: 40vw;
+      border-radius: 12px;
+      background-color: whitesmoke; }
+  #home-container #posts-list-container .post-comments .post-comments-list {
+    text-decoration-style: none;
+    background: linear-gradient(72.92deg, #0294f536 0.9%, #f5d20800 97.46%);
+    border-radius: 5px;
+    margin-left: 60px; }
+    #home-container #posts-list-container .post-comments .post-comments-list #comment {
+      margin-left: 10px;
+      background: linear-gradient(72.92deg, #0294f536 0.9%, #f5d20800 97.46%);
+      border-radius: 5px; }
+      #home-container #posts-list-container .post-comments .post-comments-list #comment small {
+        background-color: #f4c20d;
+        border-radius: 1px; }
+      #home-container #posts-list-container .post-comments .post-comments-list #comment a {
+        color: #ec0808;
+        text-decoration: underline; }
