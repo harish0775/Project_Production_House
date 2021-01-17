@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>
+      <%= title %>
+    </title>
+    <!-- google fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- /css/home.css: this file address where css fle present -->
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <!-- full page container -->
+    <div class="container">
+      <!-- todoapp box content container -->
+       <div class="todoapp">
+         <!-- TODO APP container heading -->
+         <h2>TODO App</h2>
+
+         <!-- horizontal-divider : divide to content-->
+         <div class="horizontal-divider"></div>
+
+
+          <!-- This is form where we put data  send and delete  both action will follow on server by request,respose 
+          we pushing describtion,category,date into database
+          we use require mean this  field important.
+
+          
+          -->
+             
+         <form id="task-input" action="/create-task" method="POST">
+<div id="descriptioncolor">
+
+              <!-- DESCRIPTION :where user can put task description need to do-->
+          <label for="description" id="Descrip">DESCRIPTION</label><br />
+          <input
+          type="text"
+          name="description"
+          id="description"
+          placeholder="What do you need to do?"
+          required
+        />
+
+</div>   
+ <!-- this is horizontal-divider div two div horizontaly -->
+        <div class="horizontal-divider"></div>
+       
+       
+        <div id="flex">
+        
+
+        <!-- Category session show category type user task-input -->
+        <fieldset><legend>CATEGORY:</legend>
+        <select name="category" id="category">
+          
+          <option value="selected" >Choose a category</option>
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="school">School</option>
+          <option value="cleaning">Cleaning</option>
+          <option value="other">Other</option>
+        </select> 
+      </fieldset>
+
+
+      
+       <fieldset><legend>DUE DATE</legend>
+       
+
+        <!-- Date input show calender icon where user can click the icon it's  show calender to user -->
+      <input type="date" name="date" id="date" required />
+    </fieldset>
+        </div>
+     
+           <div class="horizontal-divider"></div>
+
+           <div id="add-butn-flex" type="add-butn-flex">
+
+          <!-- This is add button add user tasks what user need to do. after fill the form.  
+                when user click on add button action will perrform on the form and  submite the task on the server-->
+        <button type="submit" id="add-btn"><i class="fas fa-plus-square"></i>
+        ADD TASK
+      </button>
+    </div>
+
+      
+    </form>
+   
+    <div id="deleteflex">
+
+    <form method="POST" action="/delete-task" id="delete-form">
+       <!-- This is delte button where  user can  delete tasks. after choose taks on  checkbox . after selete delte task will delte task on the server and tasklist .  
+                when user click on delte button action will perrform on the form -->
+     <div id="delete-btn-right"><button type="submit" id="delete-btn">
+        <i class="fas fa-trash"></i> DELETE TASKS
+      </button>
+    </div> 
+     
+      <!-- looping to show the tasks -->
+      <div id="taskcontainer"> 
+      </div>
+      <div id="task-list-container">
+        <h3>Task list</h3>
+        <% for (let i of task_list){%>
+        <div class="horizontal-divider"></div>
+        <div class="task">
+          <!-- task name and checkbox -->
+          <div class="checkbox">
+            <input type="checkbox" name="<%=i._id%>" /><%= i.task %>
+          </div>
+          <!-- task category -->
+          <div class="category">
+            Category : <span><%= i.category %></span>
+          </div>
+          <!-- task date  -->
+          <p><i class="fas fa-calendar-alt"></i> <%= i.date %></p>
+        </div>
+        <%}%>
+      </div>
+
+      <!-- delete task button -->
+      
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
+<!--  -->

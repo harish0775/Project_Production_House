@@ -1,0 +1,378 @@
+<html>
+<head>
+    <title>Playlist</title>
+    <!-------------------------------FONT_AWESOME------------------------------>
+  <!--   <script src="https://kit.fontawesome.com/d04f3c9245.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--------------------CSS_FILE----------------------------->
+    <link rel="stylesheet" type="text/css" href="Singlescreen.css">
+
+</head>
+<body>
+    <!-------------------------------HEADER------------------------------>
+
+  <header>
+<div class="top_nav_bar">
+  
+      <!-- top navigation bar -->                  
+ <div class="logo_with_text">
+    <div class="website_logo">
+         <a href="#">
+            <img src="Music Player Project_IMAGES/media.music.musicplayer_512x512.png">
+        </a>
+    </div>
+      <div class="website_name"style="color : white;">
+        <h5>𝓒𝓸𝓭𝓮𝓡𝓲𝓬𝓱𝓲</h5>
+        <h4>𝕤𝕥𝕦𝕕𝕚𝕠</h4>
+      </div>
+ </div>
+           <div class="favs">
+            <h4>
+                Favourites 
+            </h4>
+        </div>
+     <div class="search_bar">
+            <div class="magnifying_glass">
+                <!-- magnifying glass- search icon -->          
+            </div>
+            <input type="text" name="search" placeholder="Search">
+            <div class="magnifying_glass">
+                <!-- mic icon -->
+                 <i class="fas fa-search search-ico"></i>
+           </div>
+     </div>
+
+     <div class="bell_icon">
+        
+        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" width="45px"
+    height="45px";>
+     </div>
+
+       <div class="User_profile">
+        <a href="#"><img src="Music Player Project_IMAGES/photo.png"></a>
+
+    </div>
+        
+</div>
+    </header>
+    <!-------------------------------MAIN_SECTION1------------------------------>
+
+    <main>
+        <section class="section1">
+            <div class="genres">
+                <div class="box">
+                    <img style="width: 100%;background:cover;border-radius:4px;position: absolute;" src="data:image/jpeg;base64,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">
+                </div>
+                <div class="intro">
+                    <h2>Arijit Singh</h2>
+                    Followers 12.40 M
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </h3>
+                    <br><br>
+                    <button>PLAY ALL</button>
+                    <button>SHARE</button>
+                </div>
+            </div>
+            <!-------------------------------STATION------------------------------>
+
+
+         <!--    station: where you can hover over it and it's change it shape it work as play music -->
+            <div class="station">
+                <div class="queue">
+                    <label style="align-self: center;font-weight:600;color: white;">01</label>
+                    <div class="box">
+                        <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                    </div>
+              <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                        <h5>Mirage1</h5>
+                        <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                    </div>
+                    <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="station">
+                <div class="queue">
+                    <label style="align-self: center;font-weight:600;color: white;">02</label>
+                    <div class="box">
+                        <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                    </div>
+                    <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                        <h5>Mirage</h5>
+                        <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                    </div>
+                    <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="station">
+                <div class="queue">
+                    <label style="align-self: center;font-weight:600;color: white;">03</label>
+                    <div class="box">
+                        <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                    </div>
+                    <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                        <h5>Mirage</h5>
+                        <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                    </div>
+                    <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="station">
+                <div class="queue">
+                    <label style="align-self: center;font-weight:600;color: white;">04</label>
+                    <div class="box">
+                        <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                    </div>
+                    <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                        <h5>Mirage</h5>
+                        <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                    </div>
+                    <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="station">
+                <div class="queue">
+                    <label style="align-self: center;font-weight:600;color: white;">05</label>
+                    <div class="box">
+                        <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                    </div>
+                    <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                        <h5>Mirage</h5>
+                        <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                    </div>
+                    <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+
+            <br>
+            <br>
+        </section>
+
+
+        <!-------------------------------MAIN_SECTION2(QUEUE)------------------------------>
+
+        <section class="section2">
+
+
+            <h3 style="color: white;margin-left: 10px;">Similar Artists</h3>
+            <div class="artist">
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <br>
+                    4:40
+                </div>
+            </div>
+            <div class="artist">
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <br>
+                    4:40
+                </div>
+            </div>
+
+            <div class="artist">
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <br>
+                    4:40
+                </div>
+            </div>
+
+            <div class="artist">
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <br>
+                    4:40
+                </div>
+            </div>
+
+            <div class="artist">
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <br>
+                    4:40
+                </div>
+            </div>
+            <h3 style="color: white;margin-left: 10px;">Recently Played</h3>
+            <div class="queue">
+                <label style="align-self: center;font-weight:600;color: white;">01</label>
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+            <div class="queue">
+                <label style="align-self: center;font-weight:600;color: white;">02</label>
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="queue">
+                <label style="align-self: center;font-weight:600;color: white;">03</label>
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="queue">
+                <label style="align-self: center;font-weight:600;color: white;">04</label>
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="queue">
+                <label style="align-self: center;font-weight:600;color: white;">05</label>
+                <div class="box">
+                    <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+                </div>
+                <div class="name" style="display: flex;flex-direction: column;color: white;margin-left: 10px;">
+                    <h5>Mirage</h5>
+                    <label style="font-size: 12px;margin-top: -10px;">Else</label>
+                </div>
+                <div class="fav" style="align-self: center;margin-left: 125px;color: white;">
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+
+
+            <br> <br> <br> <br>
+
+        </section>
+    </main>
+
+    <!-------------------------------FOOTER------------------------------>
+
+
+    <footer>
+        <div class="content">
+
+            <div class="box">
+                <img src="Music Player Project_IMAGES/websitebanner.jpg" style="width: 100%;">
+            </div>
+            <div>
+                <div id="dispbox">
+                    <h5>
+                        <marquee>LOCA</marquee>
+                    </h5>
+                </div>
+
+            </div>
+
+            <div>
+
+                <i class="fas fa-forward fa-flip-horizontal"></i>
+
+                <i class="fas fa-play"></i>
+
+                <i class="fas fa-forward"></i>
+
+            </div>
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="10" class="slider">
+            </div>
+
+            <div>
+                <i class="fas fa-random" style=""></i>
+                <i class="fas fa-redo"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-volume-up"></i>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+</body></html>
