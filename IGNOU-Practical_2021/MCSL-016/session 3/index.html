@@ -1,0 +1,29 @@
+<!-- Exercises
+1. What are the tags used to display information for browsers that do not support
+frames?
+2. Write the various attributes of frameset tag and frame tag.
+  
+
+Attributes of Frameset tag:
+cols: The cols attribute is used to create vertical frames in web browser. ...
+rows: The rows attribute is used to create horizontal frames in web browser. ...
+border: This attribute of frameset tag defines the width of border of each frames in pixels.
+
+3. Write a code in  HTML to design a page with two frames. The frame should
+remain proportionate even when page is resized.
+
+
+    noresize = "noresize"-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<frameset cols="50%,*,25%">
+  <frame src="frame_a.htm" noresize="noresize">
+  <frame src="frame_b.htm">
+  <frame src="frame_c.htm">
+</frameset>
+
+</html>
