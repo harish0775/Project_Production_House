@@ -36,7 +36,7 @@
             cout<<"\nStudent Name :: "<<name<<endl;
             cout<<"\nRoll no   is :: "<<roll<<endl;
             cout<<"\nAddress is :: "<<add<<endl;
-            cout<<"\nZipcode is :: "<<zip;
+            cout<<"\nZipcode is :: "<<zip; 
     }
       
     stu :: ~stu()
