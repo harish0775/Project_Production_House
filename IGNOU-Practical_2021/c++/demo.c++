@@ -25,7 +25,7 @@
             cout<<"\nEnter the student roll no :: ";
             cin>>roll;
             cout<<"\nEnter the student address :: ";
-            cin>>add;
+            cin>>add; 
             cout<<"\nEnter the Zipcode :: ";
             cin>>zip;
     }
