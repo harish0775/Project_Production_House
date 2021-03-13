@@ -38,7 +38,7 @@
             cout<<"\nAddress is :: "<<add<<endl;
             cout<<"\nZipcode is :: "<<zip;
     }
-     
+      
     stu :: ~stu()
     {
             cout<<"\n\nStudent Detail is Closed.............\n";
