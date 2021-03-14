@@ -1,26 +1,42 @@
-<HTML>
-    <HEAD>
-    <SCRIPT>
-    function window_onload()
-    {
-    var numberFoms = document.forms.length;
-    var formIndex;
-    for (formIndex = 0; formIndex < numberForms; formIndex++)
-    {
-    alert(document.forms[formIndex].name);
-    }
-}
-    </SCRIPT>
-    </HEAD>
-    <BODY LANGUAGE=JavaScript onLoad="window_onload()">
-    <FORM NAME="form 1">
-    <P>This is inside form 1 </P>
-    </FORM>
-    <FORM NAME="form2">
-    <P>This is inside forrn2</P>
-    </FORM>
-    <FORM NAME="form3">
-    <P>This is inside form3</P>
-    </FORM>
-    </BODY>
-    </HTML>
+<html>
+    <head>
+        <title> Hello World</title>
+    </head>
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+    <body> 
+<form action="post" style="padding: 150;" onsubmit="return validateForm()" >
+<label for="name" placeholder="Teacher FirstName">Teacher FirstName </label>
+<input type="text" name = "name" method = "POST" > <br>
+<label for="name" placeholder="lastName">Teacher LastName</label>
+<input type="text"  name = "name" method = "POST"><br>
+<label for="subject">Teacher LastName</label>
+<select
+   <option>Harish</option>
+   <option>Krish</option>
+   <option>Hariom</option>
+   <option>geet</option>
+   <option>santosh</option>
+</select>
+  <h4> Why did you choose the course </h4>
+  <label for="cousre">Degree required</label>
+  <input type="radio"><br>
+  <label for="cousre">Personal interest</label>
+  <input type="radio"><br>
+  <h4>Level of the knowledge at the end of the course </h4>
+  <label for="cousre">Very good</label>  <input type="radio"><br><br>
+  <label for="cousre">good</label>  <input type="radio"><br><br>
+  <label for="cousre">satifactory</label>  <input type="radio"><br><br>
+ <input type="submit" name="submit" value="submit"  style="padding: 10px;"> 
+<input type="reset" name = "reset" value="reset" style="padding: 10px;"> 
+</form>
+    
+    </body>
+</html>
