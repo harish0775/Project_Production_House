@@ -2,19 +2,15 @@
     <head>
         <title>knowledge</title>
    </head>
+   <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+   <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+   <p><img id="output" width="200" /></p>
+   
    <script>
-    function myfunction(){
-        var d = Date();
-        document.getElementById("demo").innerHTML = d.getFullYear();
-    }
-</script>
-   <body>
-<h1 > this Is My Script Page</h1>  
-<p id="demo">
- Today Date time
-</p>
-<button onclick="myfunction()">
-    click
-</button>
+   var loadFile = function(event) {
+       var image = document.getElementById('output');
+       image.src = URL.createObjectURL(event.target.files[0]);
+   };
+   </script>
 </body>
-</html>
+</html> 
