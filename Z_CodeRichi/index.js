@@ -17,7 +17,7 @@ const flash = require('connect-flash');
 const customMware = require('./config/middleware');            
                                                                           
 app.use(sassMiddleware({                  
-    src: './assets/scss',               
+    src: './assets/scss',                 
     dest: './assets/css',                
     debug: true,                                                          
     outputStyle: 'extended',
